@@ -13,7 +13,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Building Docker image..."
+                echo "Building Docker image... and push other stage"
                 sh "docker build -t notes-app:latest ."
             }
         }
